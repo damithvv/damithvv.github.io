@@ -47,9 +47,18 @@
     .thumb { width:40px; height:40px; object-fit:contain; background:#fff; border-radius:6px; border:1px solid var(--border); }
     .sku { font-family:monospace; font-weight:600; font-size:.75rem; }
     .none { color:var(--muted); font-style:italic; font-size:.82rem; }
+  
+    .site-nav { display:flex; flex-wrap:wrap; gap:.7rem 1rem; padding:.5rem 1.25rem; background:#0b1220; border-bottom:1px solid #2d3a4d; font-size:.82rem; align-items:center; }
+    .site-nav a { color:#93c5fd; text-decoration:none; }
+    .site-nav a:hover { text-decoration:underline; }
+    .site-nav a.active { color:#6ee7b7; font-weight:650; }
   </style>
 </head>
 <body>
+    <nav class="site-nav">
+    <a class="active" href="./">Top 100 GT vs QA</a>
+    <a href="trial1-vs-trial2.html">Trial 1 vs Trial 2</a>
+  </nav>
   <header>
     <h1>Top 100 US Queries — User Clicks (GT) vs QA Search API · NDCG@25</h1>
     <div class="sub">2026-08-12 08:16 UTC · Clicks: prod BA US · SERP: QA API · graded relevance = click count</div>
